@@ -1,7 +1,7 @@
 from interpreter import draw
 from chessPictures import *
 KNIGHTN=KNIGHT.copy()
-negativo(KNIGHTN,"@")
+invertir(KNIGHTN,"@")
 x = KNIGHT+KNIGHTN
 y= KNIGHTN+KNIGHT
 def func(a, b,):

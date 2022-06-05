@@ -51,7 +51,7 @@ class Picture:
         """Devuelve una figura rotada en 90 grados, puede ser en sentido horario
         o antihorario"""
         return Picture(None)
-def negativo(f,p):
+def invertir(f,p):
         g=len(f)
         for a in range(g):
             i=f[a]

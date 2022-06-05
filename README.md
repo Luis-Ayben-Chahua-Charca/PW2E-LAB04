@@ -52,35 +52,31 @@
 ## 1 EJERCICIOS PROPUESTOS
 -  Dibuje las siguientes figuras (invoque a draw):
 
-            *    (a) ![(a)](imagenes/ejercicio_02_a.png)
+    *    (a) ![(a)](imagenes/ejercicio_02_a.png)
 
-            *    (b) ![(b)](imagenes/ejercicio_02_b.png)
+    *    (b) ![(b)](imagenes/ejercicio_02_b.png)
 
-            *    (c) ![(c)](imagenes/ejercicio_02_c.png)
+    *    (c) ![(c)](imagenes/ejercicio_02_c.png)
 
-            *    (d) ![(d)](imagenes/ejercicio_02_d.png)
+    *    (d) ![(d)](imagenes/ejercicio_02_d.png)
 
-            *    (e) ![(e)](imagenes/ejercicio_02_e.png)
+    *    (e) ![(e)](imagenes/ejercicio_02_e.png)
 
-            *    (f) ![(f)](imagenes/ejercicio_02_f.png)
+    *    (f) ![(f)](imagenes/ejercicio_02_f.png)
 
-            *    (g) ![(g)](imagenes/ejercicio_02_g.png)
+    *    (g) ![(g)](imagenes/ejercicio_02_g.png)
 
- #
-   -  Ejercicio2a.py
-   En este problema copio la lista(KNIGHT) para poder usarlo en la funcion invertir(ubicado picture.py)que hara cambiar la lista los caracteres de "." a "@"
-   con lo cual invertira el color gracias al color.py  luego ejecuto la funcion map que ejecuta una función especificada(func) para cada elemento en un iterable los traformo en un picture para finalmete invocarlo con el draw
+ 
+  - Ejercicio2a.py
+    En este problema copio la lista(KNIGHT) para poder usarlo en la funcion invertir(ubicado picture.py)que hara cambiar la lista los caracteres de "." a "@"
+    con lo cual invertira el color gracias al color.py  luego ejecuto la funcion map que ejecuta una función especificada(func) para cada elemento en un iterable los traformo en un picture para finalmete invocarlo con el draw
 
      ```sh
      from interpreter import draw
      from chessPictures import *
-     KNIGHTN=KNIGHT.copy()
-      invertir(KNIGHTN,"@")
-     x = KNIGHT+KNIGHTN
-     y= KNIGHTN+KNIGHT
-     def func(a, b,):
-      return a+b
-     x = map(func, (x),(y))
+      def func(a, b,c,d):
+     return a+b+c+d
+     x = map(func, (QUEEN),(QUEEN),(QUEEN),(QUEEN))
      tablero=Picture(list(x))
      draw(tablero)
         ```
@@ -102,15 +98,15 @@
    En este problema copio la lista(SQUAREN) para poder usarlo en la funcion invertir(ubicado picture.py)que hara cambiar la lista los caracteres de "_" a "="
    con lo cual invertira el color gracias al color.py  luego ejecuto la funcion map que ejecuta una función especificada(func) para cada elemento en un iterable los traformo en un picture para finalmete invocarlo con el draw
      ```sh
-  from interpreter import draw
-  from chessPictures import *
-  def func(a, b,c,d,e,f,g,h):
-  return a+b+c+d+e+f+g+h
-  SQUAREN=SQUARE.copy()
-  invertir(SQUAREN,"=")
-  x = map(func, (SQUAREN),(SQUARE),(SQUAREN),(SQUARE),(SQUAREN),(SQUARE),(SQUAREN),(SQUARE))
-  tablero=Picture(list(x))
-  draw(tablero)
+     from interpreter import draw
+     from chessPictures import *
+     def func(a, b,c,d,e,f,g,h):
+     return a+b+c+d+e+f+g+h
+      SQUAREN=SQUARE.copy()
+      invertir(SQUAREN,"=")
+      x = map(func, (SQUAREN),(SQUARE),(SQUAREN),(SQUARE),(SQUAREN),(SQUARE),(SQUAREN),(SQUARE))
+     tablero=Picture(list(x))
+     draw(tablero)
         ```
 
 

@@ -71,7 +71,7 @@
 
     En este problema copio la lista(KNIGHT) para poder usarlo en la funcion invertir(ubicado picture.py)que hara cambiar la lista los caracteres de "." a "@"
     con lo cual invertira el color gracias al color.py  luego ejecuto la funcion map que ejecuta una función especificada(func) para cada elemento en un iterable los traformo en un picture para finalmete invocarlo con el draw
-    
+
 
        ```sh
      from interpreter import draw
@@ -86,9 +86,9 @@
 
   -  Ejercicio2c.py
 
-  Ejecuto la funcion map que ejecuta una función especificada(func) para cada elemento en un iterable los trasformo en un picture para finalmete invocarlo con el draw
+     Ejecuto la funcion map que ejecuta una función especificada(func) para cada elemento en un iterable los trasformo en un picture para finalmete invocarlo con el draw
 
-     ```sh
+      ```sh
      from interpreter import draw
      from chessPictures import *
       def func(a, b,c,d):
@@ -100,8 +100,8 @@
     
   -  Ejercicio2e.py
 
-   En este problema copio la lista(SQUAREN) para poder usarlo en la funcion invertir(ubicado picture.py)que hara cambiar la lista los caracteres de "_" a "="
-   con lo cual invertira el color gracias al color.py  luego ejecuto la funcion map que ejecuta una función especificada(func) para cada elemento en un iterable los traformo en un picture para finalmete invocarlo con el draw
+      En este problema copio la lista(SQUAREN) para poder usarlo en la funcion invertir(ubicado picture.py)que hara cambiar la lista los caracteres de "_" a "="
+      con lo cual invertira el color gracias al color.py  luego ejecuto la funcion map que ejecuta una función especificada(func) para cada elemento en un iterable los traformo en un picture para finalmete invocarlo con el draw
 
      ```sh
      from interpreter import draw

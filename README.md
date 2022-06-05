@@ -71,17 +71,17 @@
    En este problema copio la lista(KNIGHT) para poder usarlo en la funcion invertir(ubicado picture.py)que hara cambiar la lista los caracteres de "." a "@"
    con lo cual invertira el color gracias al color.py  luego ejecuto la funcion map que ejecuta una función especificada(func) para cada elemento en un iterable los traformo en un picture para finalmete invocarlo con el draw
      ```sh
-    from interpreter import draw
-    from chessPictures import *
-    KNIGHTN=KNIGHT.copy()
-   invertir(KNIGHTN,"@")
-   x = KNIGHT+KNIGHTN
-   y= KNIGHTN+KNIGHT
-   def func(a, b,):
-  return a+b
-   x = map(func, (x),(y))
-  tablero=Picture(list(x))
-  draw(tablero)
+     from interpreter import draw
+     from chessPictures import *
+     KNIGHTN=KNIGHT.copy()
+      invertir(KNIGHTN,"@")
+     x = KNIGHT+KNIGHTN
+     y= KNIGHTN+KNIGHT
+     def func(a, b,):
+      return a+b
+     x = map(func, (x),(y))
+     tablero=Picture(list(x))
+     draw(tablero)
         ```
 
 

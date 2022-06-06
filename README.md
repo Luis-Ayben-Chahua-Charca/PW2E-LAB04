@@ -87,7 +87,7 @@
 
     En este ejercicio se crea cada una de las entidades Caballo Blanco(KNIGHT), Caballo Negro(KNIGHTB), Caballo Blanco Invertido (KINGHTI) y Caballo Negro Invertido(KNIGHTBI) para luego mapearlo en el orden deseado, basado en una funcion similar al ejercicio de mi compañero. 
 
-        ```sh 
+     ```sh 
      from interpreter import draw
      from chessPictures import *
      KNIGHTB=KNIGHT.copy()
@@ -103,8 +103,7 @@
      x = map(func, (x),(y))
      tablero=Picture(list(x))
      draw(tablero)
-        
-        ```
+     ```
 
   -  Ejercicio2c.py
 
@@ -121,7 +120,7 @@
         ```
  -  Ejercicio2d.py
     
-        Se usa negative() que contiene una funcion para revertir los colores en base a los caracteres entregados en colors.py y se iteran de manera intercalada, cambiando el color al igual que en los ejercicios 1 y 2.
+    Se usa negative() que contiene una funcion para revertir los colores en base a los caracteres entregados en colors.py y se iteran de manera intercalada, cambiando el color al igual que en los ejercicios 1 y 2.
 
      ```sh
     from interpreter import draw
@@ -133,8 +132,7 @@
     x = map(func, (SQUARE),(SQUAREN),(SQUARE),(SQUAREN),(SQUARE),(SQUAREN),(SQUARE),(SQUAREN))
     tablero=Picture(list(x))
     draw(tablero)
-
-        ```
+    ```
 
 
  -  Ejercicio2e.py

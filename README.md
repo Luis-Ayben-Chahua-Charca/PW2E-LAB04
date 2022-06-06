@@ -83,6 +83,33 @@
      draw(tablero)
         ```
 
+  -  Ejercicio2b.py 
+
+    En este ejercicio se crea cada una de las entidades Caballo Blanco(KNIGHT), Caballo Negro(KNIGHTB), Caballo Blanco Invertido (KINGHTI) y Caballo Negro Invertido(KNIGHTBI) para luego mapearlo en el orden deseado, basado en una funcion similar al ejercicio de mi compañero. 
+
+        ```sh 
+    from interpreter import draw
+    from chessPictures import *
+
+    KNIGHTB=KNIGHT.copy()
+    Picture.negative(KNIGHTB,)
+
+    aux= knight.verticalMirror() 
+    KNIGHTI = aux.copy()
+
+    KNIGHTBI = KNIGHTI.copy()
+    Picture.negative(KNIGHTBI)
+
+    x = KNIGHT+KNIGHTBI
+    y = KNIGHTB + KNIGHTI
+
+    def func(a, b,):
+     return a+b
+    x = map(func, (x),(y))
+    tablero=Picture(list(x))
+    draw(tablero)
+        
+        ```
 
   -  Ejercicio2c.py
 
@@ -97,7 +124,24 @@
      tablero=Picture(list(x))
      draw(tablero)
         ```
+  -  Ejercicio2d.py
     
+        Se usa negative() que contiene una funcion para revertir los colores en base a los caracteres entregados en colors.py y se iteran de manera intercalada, cambiando el color al igual que en los ejercicios 1 y 2.
+        ```sh
+    from interpreter import draw
+    from chessPictures import *
+
+    def func(a, b,c,d,e,f,g,h):
+     return a+b+c+d+e+f+g+h
+    SQUAREN=SQUARE.copy()
+    Picture.negative(SQUAREN)
+    x = map(func, (SQUARE),(SQUAREN),(SQUARE),(SQUAREN),(SQUARE),(SQUAREN),(SQUARE),(SQUAREN))
+    tablero=Picture(list(x))
+    draw(tablero)
+
+        ```
+
+
   -  Ejercicio2e.py
 
       En este problema copio la lista(SQUAREN) para poder usarlo en la funcion invertir(ubicado picture.py)que hara cambiar la lista los caracteres de "_" a "="
@@ -115,15 +159,48 @@
      draw(tablero)
         ```
 
+  -  Ejercicio2f.py
+
+    Aqui se utiliza varias repeticiones de 4 celdas verticales, que se repiten 8 veces por medio de func3 , siendo que c1 y c2 contienen los patrones basicos de columna.
+
+        ```sh
+    from interpreter import draw
+    from chessPictures import *
+
+    SQUAREB=SQUARE.copy()
+    Picture.negative(SQUAREB)
+
+    def func2(a,b,c,d,):
+        return a+b+c+d
+
+    c1 = func2 ((SQUARE) , (SQUAREB) , (SQUARE) , (SQUAREB))
+    c2 = func2 ((SQUAREB) , (SQUARE) , (SQUAREB) , (SQUARE))
+
+    def func3 (a,b):
+        return a+b+a+b+a+b+a+b
+
+    x = map(func3, (c1),(c2))
+    tablero=Picture(list(x))
+    draw(tablero)
+    
+        ```
 
 
 ## 2 SOLUCION DEL CUESTIONARIO
 -   ¿Qué son los archivos *.pyc?
+    es un archivo que interpreta, se diferencia del compilador en la velocidad, pues en interpretador ejecuta cada linea directamente del codigo.
 -   ¿Para qué sirve el directorio __pycache__?
+    es donde se almacenan estos archivos .pyc que almacenan el bytecode optimizado.
 -   ¿Cuáles son los usos y lo que representa el subguión en Python?
+    tiene varios usos para la proteccion de variables o usos y evitar conflictos:
+    variable_ : evitar conflictos con palabras clave
+    _variable : haciendo medianamente privada la variable
+    __variable : se utiliza para controlar variables o funciones de clases en la forma _Clase__funcion
+    funcion__ : se usa para funciones especificas en phyton como __init__
 
 ## 3 CONCLUSIONES
 
+    En conclusion es importante recordar la implementacion de entornos virtuales como virtualenv para correr programas que requieren de agreagados como pygame, ademas es muy util entender como en phyon se hace uso de interpretes y que facilitan la transformacion de matrices de String en imagenes ejecutables con pygame.
 
 ## RETROALIMENTACION GENERAL 
 

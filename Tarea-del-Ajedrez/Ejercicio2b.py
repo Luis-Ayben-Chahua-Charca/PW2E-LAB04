@@ -13,8 +13,6 @@ Picture.negative(KNIGHTBI)
 x = KNIGHT+KNIGHTBI
 y = KNIGHTB + KNIGHTI
 
-
-
 def func(a, b,):
   return a+b
 x = map(func, (x),(y))

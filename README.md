@@ -83,7 +83,7 @@
      draw(tablero)
         ```
 
-  -  Ejercicio2b.py 
+-  Ejercicio2b.py 
 
     En este ejercicio se crea cada una de las entidades Caballo Blanco(KNIGHT), Caballo Negro(KNIGHTB), Caballo Blanco Invertido (KINGHTI) y Caballo Negro Invertido(KNIGHTBI) para luego mapearlo en el orden deseado, basado en una funcion similar al ejercicio de mi compañero. 
 
@@ -124,10 +124,11 @@
      tablero=Picture(list(x))
      draw(tablero)
         ```
-  -  Ejercicio2d.py
+ -  Ejercicio2d.py
     
         Se usa negative() que contiene una funcion para revertir los colores en base a los caracteres entregados en colors.py y se iteran de manera intercalada, cambiando el color al igual que en los ejercicios 1 y 2.
-        ```sh
+
+     ```sh
     from interpreter import draw
     from chessPictures import *
 
@@ -159,7 +160,7 @@
      draw(tablero)
         ```
 
-  -  Ejercicio2f.py
+-  Ejercicio2f.py
 
     Aqui se utiliza varias repeticiones de 4 celdas verticales, que se repiten 8 veces por medio de func3 , siendo que c1 y c2 contienen los patrones basicos de columna.
 

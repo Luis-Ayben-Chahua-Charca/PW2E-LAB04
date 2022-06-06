@@ -90,19 +90,14 @@
         ```sh 
      from interpreter import draw
      from chessPictures import *
-
      KNIGHTB=KNIGHT.copy()
      Picture.negative(KNIGHTB,)
-
      aux= knight.verticalMirror() 
      KNIGHTI = aux.copy()
-
      KNIGHTBI = KNIGHTI.copy()
      Picture.negative(KNIGHTBI)
-
      x = KNIGHT+KNIGHTBI
      y = KNIGHTB + KNIGHTI
-
      def func(a, b,):
       return a+b
      x = map(func, (x),(y))
@@ -131,7 +126,6 @@
      ```sh
     from interpreter import draw
     from chessPictures import *
-
     def func(a, b,c,d,e,f,g,h):
      return a+b+c+d+e+f+g+h
     SQUAREN=SQUARE.copy()
@@ -164,27 +158,22 @@
 
     Aqui se utiliza varias repeticiones de 4 celdas verticales, que se repiten 8 veces por medio de func3 , siendo que c1 y c2 contienen los patrones basicos de columna.
 
-        ```sh
+    ```sh
     from interpreter import draw
     from chessPictures import *
-
     SQUAREB=SQUARE.copy()
     Picture.negative(SQUAREB)
-
     def func2(a,b,c,d,):
         return a+b+c+d
-
     c1 = func2 ((SQUARE) , (SQUAREB) , (SQUARE) , (SQUAREB))
     c2 = func2 ((SQUAREB) , (SQUARE) , (SQUAREB) , (SQUARE))
-
     def func3 (a,b):
         return a+b+a+b+a+b+a+b
-
     x = map(func3, (c1),(c2))
     tablero=Picture(list(x))
     draw(tablero)
     
-        ```
+    ```
 
 
 ## 2 SOLUCION DEL CUESTIONARIO

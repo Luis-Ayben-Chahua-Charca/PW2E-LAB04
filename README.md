@@ -88,26 +88,26 @@
     En este ejercicio se crea cada una de las entidades Caballo Blanco(KNIGHT), Caballo Negro(KNIGHTB), Caballo Blanco Invertido (KINGHTI) y Caballo Negro Invertido(KNIGHTBI) para luego mapearlo en el orden deseado, basado en una funcion similar al ejercicio de mi compañero. 
 
         ```sh 
-    from interpreter import draw
-    from chessPictures import *
+     from interpreter import draw
+     from chessPictures import *
 
-    KNIGHTB=KNIGHT.copy()
-    Picture.negative(KNIGHTB,)
+     KNIGHTB=KNIGHT.copy()
+     Picture.negative(KNIGHTB,)
 
-    aux= knight.verticalMirror() 
-    KNIGHTI = aux.copy()
+     aux= knight.verticalMirror() 
+     KNIGHTI = aux.copy()
 
-    KNIGHTBI = KNIGHTI.copy()
-    Picture.negative(KNIGHTBI)
+     KNIGHTBI = KNIGHTI.copy()
+     Picture.negative(KNIGHTBI)
 
-    x = KNIGHT+KNIGHTBI
-    y = KNIGHTB + KNIGHTI
+     x = KNIGHT+KNIGHTBI
+     y = KNIGHTB + KNIGHTI
 
-    def func(a, b,):
-     return a+b
-    x = map(func, (x),(y))
-    tablero=Picture(list(x))
-    draw(tablero)
+     def func(a, b,):
+      return a+b
+     x = map(func, (x),(y))
+     tablero=Picture(list(x))
+     draw(tablero)
         
         ```
 
@@ -143,7 +143,7 @@
         ```
 
 
-  -  Ejercicio2e.py
+ -  Ejercicio2e.py
 
       En este problema copio la lista(SQUAREN) para poder usarlo en la funcion invertir(ubicado picture.py)que hara cambiar la lista los caracteres de "_" a "="
       con lo cual invertira el color gracias al color.py  luego ejecuto la funcion map que ejecuta una función especificada(func) para cada elemento en un iterable los traformo en un picture para finalmete invocarlo con el draw
@@ -158,7 +158,7 @@
       x = map(func, (SQUAREN),(SQUARE),(SQUAREN),(SQUARE),(SQUAREN),(SQUARE),(SQUAREN),(SQUARE))
      tablero=Picture(list(x))
      draw(tablero)
-        ```
+    ```
 
 -  Ejercicio2f.py
 

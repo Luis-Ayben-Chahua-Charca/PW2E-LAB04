@@ -1,4 +1,6 @@
 from colors import *
+
+
 class Picture:
   def __init__(self, img):
     self.img = img;
@@ -68,3 +70,13 @@ class Picture:
     o antihorario"""
     return Picture(None)
 
+def invertir(f,p):
+        g=len(f)
+        for a in range(g):
+            i=f[a]
+            l=list(i)
+            for x in range(len(f[a])):
+                if l[x]!="#"and l[x]!=" ":
+                    l[x]=p
+                    i="".join(l)
+                f[a]=i 
